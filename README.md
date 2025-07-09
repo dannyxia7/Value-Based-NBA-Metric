@@ -43,7 +43,7 @@ The effective performance score adds the absolute value of the lowest performanc
 
 I then multiplied each effective score to give myself a DARYL score.
 
-Interpreting DARYL Score
+## Interpreting DARYL Score
 
 The top players in DARYL score include Walker Kessler, Desmond Bane, and Tyrese Haliburton. These are all players still on their rookie contracts that have performed at highly productive levels. I think this validates DARYL score as for the upcoming season they are still considered very “bang for your buck”-esque players as their second contract hasn't kicked in. Once their second contract arrives some will be earning max-level money.
 
