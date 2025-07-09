@@ -1,4 +1,4 @@
-# Value-Based-NBA-Metric
+# DARYL Score: Value Based NBA Metric
 
 Hello! I love watching the NBA but I also like discussing how teams are built, specifically how GMs create great teams under salary cap/luxury tax restrictions. One bad contract (such as a 5yr/180m) to the wrong player can hurt a team tremendously. My favorite team is the Golden State Warriors, and I believe that they have managed their salary cap/contracts far better than most teams in the NBA, though they have also been extremely lucky on their gambles, and have been at the right place at the right time.
 
@@ -48,13 +48,14 @@ Interpreting DARYL Score
 The top players in DARYL score include Walker Kessler, Desmond Bane, and Tyrese Haliburton. These are all players still on their rookie contracts that have performed at highly productive levels. I think this validates DARYL score as for the upcoming season they are still considered very “bang for your buck”-esque players as their second contract hasn't kicked in. Once their second contract arrives some will be earning max-level money.
 
 ## Top DARYL Score Players
+| Player Name        | Salary      | DARYL Score |
+|--------------------|-------------|-------------|
+| Walker Kessler     | $2,831,160  | 55.39       |
+| Desmond Bane       | $3,845,083  | 53.18       |
+| Josh Okogie        | $2,815,937  | 51.28       |
+| Tyrese Haliburton  | $5,808,435  | 49.62       |
+| Immanuel Quickley  | $4,171,548  | 47.83       |
 
-Player Name	Salary	DARYL Score
-Walker Kessler	$2,831,160	55.39
-Desmond Bane	$3,845,083	53.18
-Josh Okogie	$2,815,937	51.28
-Tyrese Haliburton	$5,808,435	49.62
-Immanuel Quickley	$4,171,548	47.83
 It was interesting to see which players' DARYL score rated highly. Josh Okogie and Keita Bates-Diop were both highly rated by DARYL score. This seems to match some testimonials of the players performance. Perhaps the Suns have more depth then many people consider them to have. Another team DARYL score was high on is the Knicks with Immanuel Quickley, Quentin Grimes, and Isaiah Hartenstein. Perhaps DARYL score is less good at analyzing playoff performance :P
 
 Lastly, DARYL score seems to heavily discount players that get paid more than 10 million dollars as their salary z-score is determined to be quite bad. This is likely due to the salary z-score distribution being skewed to the right. Players such as Anthony Edwards and Derrick White should not be as low as they are despite their relatively higher salary. This would be the first amendment I make to changing the DARYL score algorithm.
