@@ -8,7 +8,7 @@ I sought out a way to find role players that perform relatively well but get pai
 
 I used a statistical measurement called z-scores to rate players on how “good” they perform and how much they get paid relative to other players. I used all-in-one statistics such as RAPTOR and DARKO to determine how good a player performed. I used public data from basketball reference for their salaries. There were several steps I had to take to normalize the data for appropriate analysis.
 
-Salary Z-Score
+## Salary Z-Score
 
 Determining a player's salary z-score was more straightforward since it is less abstract than “performance”. I obtained salary data from basketball-reference.com. The raw salary data was not a normal distribution. Therefore I had to get rid of outliers and consider using a log transformation. 
 I determined outliers using the IQR * 1.5 rule. The rule determined outliers to be any players earning above $31 million. I used this measure to effectively determine what one considered a “star” player and a “role player”.
@@ -17,7 +17,7 @@ It may be odd to consider a role player making $30 million. However, without an 
 
 I got rid of outliers and performed a log transformation (base e) on the data for the data to be of a more normal distribution. After doing a shapiro test the distribution was still not roughly normal. This is largely due to outliers that get paid very relatively little. Therefore the z-scores for the log transformed data should be taken with a grain of salt. Some of the data that contributed to the abnormality were outliers of players that got paid relatively less. They would get filtered out later when I filtered by playing time.
 
-Performance Z-Score
+## Performance Z-Score
 
 I considered several ways to measure a player's performance relative to others. I considered creating my own ranking statistic that focused on points scored and offensive efficiency. I realized that was a harder task than anticipated. There are many performance summary statistics such as BPM, PER, and LEBRON. I spent a weekend going through which summary statistics were most favored by the community.
 
@@ -33,7 +33,7 @@ The RAPTOR and DARKO scores were off a normal distribution therefore I took thei
 
 Some of the top players by this metric were Walker Kessler, Desmond Bane, and Tyrese Haliburton. This is taking into account their current year salary which for Bane and Halliburton is still their rookie contract. These results make intuitive sense as these are players that are performing at a star level but are still being paid on their rookie contract. It was interesting to see where other players ranked using this metric.
 
-Creating DARYL Score
+## Creating DARYL Score
 
 My goal was then to simply multiply the salary z-score and performance z-score so they would be treated roughly equally in the final calculation of DARYL score. However, this would not work as negative z-scores are considered better for salary. Negative * positive would give a negative. The formulas for how I calculated DARYL score are in one of the pictures in the repository.
 
@@ -47,7 +47,7 @@ Interpreting DARYL Score
 
 The top players in DARYL score include Walker Kessler, Desmond Bane, and Tyrese Haliburton. These are all players still on their rookie contracts that have performed at highly productive levels. I think this validates DARYL score as for the upcoming season they are still considered very “bang for your buck”-esque players as their second contract hasn't kicked in. Once their second contract arrives some will be earning max-level money.
 
-Top DARYL Score Players
+## Top DARYL Score Players
 
 Player Name	Salary	DARYL Score
 Walker Kessler	$2,831,160	55.39
